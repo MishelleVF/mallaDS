@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Curricular – DS</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular de Data Science 🖥️</h1>
+
+    <div id="filtros">
+      <button data-status="todos" class="activo">Todos</button>
+      <button data-status="Aprobado">Aprobados</button>
+      <button data-status="Pendiente">Pendientes</button>
+    </div>
+  </header>
+
+  <main id="contenedor-niveles"><!-- JS inyecta los cursos aquí --></main>
+
+  <!-- Modal -->
+  <div id="modal" class="oculto">
+    <div class="card">
+      <button id="cerrar">&times;</button>
+      <h2 id="titulo-curso"></h2>
+      <ul id="detalles"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
